@@ -6,7 +6,7 @@ Param(
     [string]$ResourceGroupName = $env:AZURE_GROUP,
     [string]$Location = $env:AZURE_LOCATION,
     [string]$FileSyncServerLogin,
-    [string]$fileSyncLoginPassword
+    [string]$FileSyncServerLoginPassword
 )
 
 if ( !$Subscription) { throw "Subscription Required" }

@@ -42,7 +42,7 @@
         }
     },
     "variables": {
-        "virtualMachineName": "[concat('finesync-svr-', parameters('suffix'))]",
+        "virtualMachineName": "[concat('fs-', parameters('suffix'))]",
         "networkInterfaceName": "[concat(variables('virtualMachineName'), '-nic-', parameters('suffix'))]",
         "scriptURL": "[concat(parameters('_artifactsLocation'),'/scripts/installfilesyncagent.ps1')]"
     },
