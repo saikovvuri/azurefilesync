@@ -86,6 +86,13 @@
                             "storageAccountType": "[parameters('osDiskType')]"
                         }
                     },
+                    "dataDisks": [
+                        {
+                            "diskSizeGB" : 12,
+                            "lun": 0, 
+                            "createOption": "Empty"
+                        }
+                    ],
                     "imageReference": {
                         "publisher": "MicrosoftWindowsServer",
                         "offer": "WindowsServer",
